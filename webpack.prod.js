@@ -7,6 +7,8 @@ module.exports = merge(webpackcommon, {
     mode: "production",
     output: {
         filename: "main.[contenthash].js",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist"),
+        assetModuleFilename: 'imgs/img-[contenthash].[ext]',
+        clean: true
     },
 });

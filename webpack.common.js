@@ -8,9 +8,20 @@ module.exports = {
         template: "./src/template.html",
     })],
     module : {
-        rules: [{
+        rules: [
+        {
             test: /\.scss$/,
             use: ['style-loader', 'css-loader', 'sass-loader']
-        }]
+        },
+        {
+            test: /\.html$/,
+            loader: 'html-loader'
+        },
+        {
+            test: /\.(png | jpg | gif | svg)$/,
+            type: 'asset/resource',
+
+         }
+      ],
     },
 }

@@ -8,6 +8,3 @@ const componentInstance = new ComponentService();
 
 
 run(alertInstance, componentInstance)
-
-
-alert("Hello From Webpack");
